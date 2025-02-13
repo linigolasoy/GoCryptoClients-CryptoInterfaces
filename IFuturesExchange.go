@@ -1,12 +1,10 @@
 package CryptoInterfaces
 
-const ExchangeTypes 
-{
-	BitUnixFutures = "BitUnixFutures"
-}
+const (
+	BitUnixFutures string = "BitUnixFutures"
+)
 
 type IFuturesExchange interface {
-
-	ExchangeType() string;
-	Symbols() []IFuturesSymbol;
+	ExchangeType() string
+	Symbols() []IFuturesSymbol
 }
